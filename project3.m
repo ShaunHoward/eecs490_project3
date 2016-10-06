@@ -3,7 +3,7 @@
 
 %% 1.a. perform gradient operation on IMAGE1
 IMAGE1 = imread('pics/IMAGE1.tif');
-img1_gradient = gradient(IMAGE1);
+img1_gradient = imgradient(IMAGE1);
 
 %% 1.b. apply laplacian operation to IMAGE1
 H = fspecial('laplacian');
