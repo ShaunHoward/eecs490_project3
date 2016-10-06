@@ -125,7 +125,7 @@ imshow(img7_edges);
 % load figure 10.25
 fig1025 = imread('pics/Fig1025 original.tif');
 % 6.a. scale original image to range [0,1]
-fig1025_scaled = (Im - min(fig1025(:))) / (max(fig1025(:)) - min(fig1025(:)));
+fig1025_scaled = (fig1025 - min(fig1025(:))) / (max(fig1025(:)) - min(fig1025(:)));
 
 % 6.b. Smooth image
 fig1025_gauss = imgaussfilt(fig1025, 'FilterSize', [3 3]);
