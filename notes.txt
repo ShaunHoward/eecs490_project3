@@ -1,0 +1,5 @@
+using im2double led to higher precision in gradient and other images.
+
+For 1e, Gaussian filtering allowed me to lower the threshold value for 
+laplacian by half (0.6 to 0.3) due to decrease in noise. Global
+thresholding on gradient image has less detail after filtering. 
