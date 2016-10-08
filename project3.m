@@ -182,7 +182,6 @@ fig1025_gauss_grad_thresh = imbinarize(imgradient(fig1025_gauss), 'global');
 
 % 6.c Apply Marr-Hildreth algorithm
 % detect edges using the Laplacian of Gaussian ('log') method
-% use default values: kernel size = 5x5 and sigma = 0.5
 H=fspecial('log', 14, .46);
 fig1025_edges = imbinarize(imfilter(fig1025, H));
 
